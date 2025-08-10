@@ -9,7 +9,8 @@ io.on('connection', (socket) =>{
     console.log('a user connected', socket.id);
 
     socket.on(("from_client"), ()=>{
-        
+
+        console.log("event coming from client")
     });
     setInterval(()=>{
         socket.emit("from_server");
